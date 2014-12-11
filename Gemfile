@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
-gem 'paperclip', '~> 4.2'
+gem 'paperclip', '~> 3.1'
 gem 'paperclip-dropbox', '>= 1.1.7'
 gem 'figaro'
 gem 'devise'
