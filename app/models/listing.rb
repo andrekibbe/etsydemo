@@ -6,10 +6,9 @@ class Listing < ActiveRecord::Base
     has_attached_file :image,
     :styles => { :medium => "200x", :thumb => "100x100>" }, :default_url => "default.jpg",
     :storage => :dropbox,
-    :dropbox_credentials => Rails.root.join("config/dropbox.yml"),
     :content_type => %w(image/jpeg image/jpg image/png),
+    :dropbox_credentials => Rails.root.join("config/dropbox.yml"),
     :path => ":style/:id_:filename"
-    # Moved validation to bottom of block
     validates_attachment_content_type :image
   end
 end
